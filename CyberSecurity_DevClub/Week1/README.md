@@ -492,7 +492,7 @@ Ctrl+C
 
 ## Week 1 Checklist
 
-- [0] Created accounts on all platforms (HackTheBox, TryHackMe, PortSwigger, CTFtime)
+- [ ] Created accounts on all platforms (HackTheBox, TryHackMe, PortSwigger, CTFtime)
 - [ ] Successfully installed and configured Kali Linux
 - [ ] Completed basic Linux commands practice
 - [ ] Written and executed first bash scripts
