@@ -1,0 +1,96 @@
+Challenge 1) Classic Caesar -  Flag encoded using Ceasar Cipher
+Approach:   1.Copy-pasted the flag in Cyberchef.
+		        2.Put ROT13 Bruteforce in the recipe
+		        3.Captured the Flag!	
+Tools/Techniques Used: CyberChef
+Solution & Explanation: 1) dcCTF{CAESAR_NEVER_DIES}
+                        2) We know that the flag starts with dcCTF
+				                3) g-d = 3 , rotating all the characters behind by 3 we get the flag 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Challenge 2) OuiOui Secret -  Flag encoded using Vignere encode
+Approach:  1.Copy-pasted the flag in Cyberchef.
+	         2.Put Vignere decode in the recipe
+	         3.Manually bruteforced the key letter-by-letter to get the format dcCTF{meaningful_string}.
+		       4.Captured the Flag!
+Tools/Techniques Used: CyberChef
+Solution & Explanation: 1) dcCTF{how_did_you_bruteforce_this}
+				                2) We know that the flag starts with dcCTF.
+				                3) Manually bruteforced the key letter-by-letter to get the format dcCTF{meaningful_string}.
+				                4) Got the key - dckysl
+Learnings: Bruteforcing wasn’t as time taking as I thought it would be and was fun actually.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Challenge 3) Fair Enough -  Flag encoded using Playfair cipher
+Approach:  1.Copy-pasted the flag in dcode- playfair.
+	         2.Used the hill-climbing and Simulated Annealing method to directly get a maeningful string.
+	         3.Captured the Flag!
+Tools/Techniques Used: dCode.fr
+Solution & Explanation: 1) dcCTF{BUTAREYOUPLAYINGFAIR}
+				                2) Use a plain key / grid to decode using playfair cipher methods.
+Learnings: dCode.fr is really the best tool !
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Challenge 4) Weak RSA -  RSA encryption problem
+Approach:  1.Factorised the n using dCode.fr
+		       2.Used dCode - RSA Cipher to decrypt the flag
+		       3.Captured the Flag!
+Tools/Techniques Used: dCode.fr
+Solution & Explanation: 1) dcCTF{W34k_RSA_1s_N0_G00D}
+				                2) Use any RSA decrypter and factoriser to decrypt the RSA.
+				                3) A code can also be used. (I used during practice which ChatGPT gave me)
+Learnings: dCode.fr is really the best tool !
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Challenge 5) XOR -  A flag encrypted by XORing
+Approach:   1. Copy-pasted the encrypted flag in dCode 
+		        2. Used dCode - XOR Cipher and XOR-ed using the key as dcCTF as we knew the starting characters of the flag.
+		        3. Got sandsa….
+		        4. Used sandsa as the key and then tried adding letters to the key to get a meaningful flag.
+		        5. The key turned out to be sand.
+		        6. Captured the Flag!
+Tools/Techniques Used: dCode.fr (Also used a hint)
+Solution & Explanation: 1) dcCTF{d0nT_R3peAt_x0R}
+                        2) XOR the starting hexes with the hex value of the characters in our required format to get the key.
+				                3) Use the key to decrypt the flag
+Learnings: Smartly Brute-forcing a key .
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Challenge 6) Hidden in Plain Sight- A problem on Steganography
+Approach:   1.Used the hint saying Stegseek could solve it easily.
+		        2.Used stegseek and rockyou.txt to get the flag deciphered
+		        3. Captured the Flag!
+Tools/Techniques Used: Stegseek, rockyou.txt (Also used a hint)
+Solution & Explanation: 1) dcCTF{h1d1ng_1n_y0ur_w1f1}
+                        2) Use stegseek and rockyou.txt to get the flag deciphered
+Learnings: Got to know about new tool- Stegseek .
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Challenge 7) Chameleon Image- A problem on Steganography
+Approach:   1. Looked at the file size, found it suspicious.
+		        2. Put it on StegOnline only to find the strings saying - 'The real flag is in flag.txt' 
+		        3. Deduced that the image has files hidden in it.
+		        4. Used stegseek to get the zip file out of the image.
+		        5. Unzipped the zip file to get the flag in flag.txt
+		        6. Captured the Flag!
+Tools/Techniques Used: Stegseek, StegOnline, (Also used a hint)
+Solution & Explanation: 1) dcCTF{POLYGLOT_FILES_ARE_SNEAKY}
+                        2) Look for suspicion in the file size, file type.
+				                3) If the image seems suspicious, use stegseek to get the contents here, a zip file and extract flag by unzipping and searching for it in the files obtained.
+Learnings: Got to know about new tool- Stegseek and File hiding in an image was crazyyy stuff .
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Challenge 8) Sound of Secrets - A problem on Steganography
+Approach:   1. Put it on dCode.fr - spectrogram to get the spectrogram
+		        2. The upper part of Spectrogram had the morse code encoded message.
+		        3. Put the morse code in dCode.fr - morse code to get the flag.
+		        4. Captured the Flag!
+Tools/Techniques Used: dCode.fr - spectrogram and morse code , (Also used a hint)
+Solution & Explanation: 1) dcCTF{R34LFL4G}
+                        2) Carefully observe the spectrogram and listen to the audio file for hidden messages and unexpected anomalies in the spectrogram.
+				                3) Here, morse code was observed which then can be translated using any morse code translator.
+Learnings: Observing the spectrogram was fun.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Challenge 9) Evidence Disk - Recovering the Disk
+Approach:   1. Used foremost to recover the disk image.
+		        2. Found the flag in the png folder in a png image.
+		        3. Captured the Flag!
+Tools/Techniques Used: foremost
+Solution & Explanation: 1) dcCTF{FILE_RECOVERY_SUCCESS}
+                        2) Use Foremost or similar tools to recover the corrupted disk image.
+				                3) Scan the recovered files for the flag.
+Learnings: Recovering the corrupted disk was a good experience.
+---------------X-------------------X--------------------X-------------------X-----------------X-------------------X-------------------X------------------X--------------------X-----------
